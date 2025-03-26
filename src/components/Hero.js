@@ -1,15 +1,15 @@
 import React from "react";
 import "../styles/Hero.css";
-import profileImage from "../assets/images/profile.jpg"; // Make sure the image exists
+import profileImage from "../assets/images/profile.png";
 
 const Hero = () => {
   return (
     <section className="hero" id="hero">
       <div className="hero-content">
-        <h1>Hi, I'm Your Name</h1>
+        <h1>Hi! I'm Jonathan</h1>
         <p>
-          A passionate developer and tech enthusiast crafting sleek digital
-          experiences.
+          A data engineer with a passion in designing data-intensive
+          applications.
         </p>
       </div>
       <div className="hero-image">

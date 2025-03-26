@@ -4,12 +4,19 @@ import "../styles/Header.css";
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo">Your Name</div>
-      <nav>
-        <a href="#hero">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+      <div className="logo">Jonathan Feng</div>
+      <nav className="navigation">
+        <ul>
+          <li>
+            <a href="#hero">Home</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+        </ul>
       </nav>
     </header>
   );
