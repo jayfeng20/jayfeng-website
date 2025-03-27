@@ -22,7 +22,7 @@ const Experience = () => {
       company: "Epic Games",
       duration: "Jan 2024 - Apr 2024",
       description:
-        "Worked with various key backend data services that are the core of Epic Games' data infrastructure.",
+        "Worked with various key backend data services that make up the core of Epic Games' data infrastructure.",
     },
     // Add additional experiences as needed.
   ];
