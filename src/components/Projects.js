@@ -7,7 +7,7 @@ const Projects = () => {
       title: "Pithy",
       description:
         "Comment analysis tool that uses LLM for sorting comments based on user defined queries.",
-      link: "#https://github.com/orgs/Pithy-App/repositories",
+      link: "https://github.com/orgs/Pithy-App/repositories",
     },
     {
       title: "Have You Eaten?",
