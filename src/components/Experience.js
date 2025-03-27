@@ -4,18 +4,25 @@ import "../styles/Experience.css";
 const Experience = () => {
   const experiences = [
     {
-      title: "Job Title 1",
-      company: "Company Name",
-      duration: "Jan 2020 - Present",
+      title: "Data Software Engineer Intern",
+      company: "Tesla",
+      duration: "Sept 2024 - Nov 2024",
       description:
-        "Worked on developing scalable web applications and improving user experience.",
+        "Worked on the data platform that's a part of Tesla's backend application ecosystem.",
     },
     {
-      title: "Job Title 2",
-      company: "Company Name",
-      duration: "May 2018 - Dec 2019",
+      title: "Data Engineer Intern",
+      company: "Castleton Commodities International",
+      duration: "Jun 2024 - Aug 2024",
       description:
-        "Contributed to multiple projects in agile teams and optimized code for performance.",
+        "Created infrastructure for automatic ML model (XGBoost) generation based on dataset-related parameters.",
+    },
+    {
+      title: "Software Engineer Intern",
+      company: "Epic Games",
+      duration: "Jan 2024 - Apr 2024",
+      description:
+        "Worked with various key backend data services that are the core of Epic Games' data infrastructure.",
     },
     // Add additional experiences as needed.
   ];
