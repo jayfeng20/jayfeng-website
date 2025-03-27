@@ -4,15 +4,15 @@ import "../styles/Projects.css";
 const Projects = () => {
   const projects = [
     {
-      title: "Project One",
+      title: "Pithy",
       description:
-        "A brief description of project one that highlights its features and the technologies used.",
-      link: "#",
+        "Comment analysis tool that uses LLM for sorting comments based on user defined queries.",
+      link: "#https://github.com/orgs/Pithy-App/repositories",
     },
     {
-      title: "Project Two",
+      title: "Have You Eaten?",
       description:
-        "A brief description of project two with details about what makes it unique.",
+        "Social platform for storing ingredients, sharing recipes, and sending anyone a culinary challenge.",
       link: "#",
     },
     // Add additional projects as needed.
