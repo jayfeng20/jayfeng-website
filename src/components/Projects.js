@@ -15,7 +15,6 @@ const Projects = () => {
         "Social platform for storing ingredients, sharing recipes, and sending anyone a culinary challenge.",
       link: "#",
     },
-    // Add additional projects as needed.
   ];
 
   return (

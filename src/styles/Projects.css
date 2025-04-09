@@ -8,6 +8,7 @@
 .projects h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
+  color: #222; /* Blackish grey for the section heading */
 }
 
 .projects-grid {
@@ -30,11 +31,16 @@
 
 .project-card h3 {
   margin-top: 0;
-  color: #007acc;
+  color: #222; /* Blackish grey titles */
 }
 
 .project-card a {
-  color: #007acc;
+  color: #007acc; /* Clickable link color */
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #005fa3; /* Darker blue on hover */
 }

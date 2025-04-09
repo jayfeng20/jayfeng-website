@@ -31,15 +31,19 @@ const Experience = () => {
     <section className="experience" id="experience">
       <h2>Experience</h2>
       <div className="experience-list">
-        {experiences.map((exp, index) => (
-          <div className="experience-item" key={index}>
-            <h3>
-              {exp.title} - {exp.company}
-            </h3>
-            <span className="duration">{exp.duration}</span>
-            <p>{exp.description}</p>
-          </div>
-        ))}
+        {experiences.map((exp, index) => {
+          // Split title into job title and team if a comma exists
+          const [jobTitle, team] = exp.title.split(",");
+          return (
+            <div className="experience-item" key={index}>
+              <h3 className="experience-title">{jobTitle.trim()}</h3>
+              {team && <span className="experience-team">{team.trim()}</span>}
+              <span className="experience-company">{exp.company}</span>
+              <span className="duration">{exp.duration}</span>
+              <p className="experience-description">{exp.description}</p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

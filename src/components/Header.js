@@ -1,25 +1,30 @@
 import React from "react";
 import "../styles/Header.css";
 
-const Header = () => {
+function Header() {
   return (
     <header className="header">
-      <div className="logo">Jonathan Feng</div>
+      <div className="logo-container">
+        <div className="logo-icon">J</div>
+        {/* <span className="logo-text">Jonathan</span> */}
+      </div>
+
+      {/* RIGHT: Navigation Menu */}
       <nav className="navigation">
         <ul>
           <li>
-            <a href="#hero">Home</a>
+            <a href="#hero">HOME</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects">PROJECTS</a>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <a href="#experience">EXPERIENCE</a>
           </li>
         </ul>
       </nav>
     </header>
   );
-};
+}
 
 export default Header;
