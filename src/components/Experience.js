@@ -4,21 +4,21 @@ import "../styles/Experience.css";
 const Experience = () => {
   const experiences = [
     {
-      title: "Data Software Engineer Intern",
+      title: "Data Engineer Intern, Applications Engineering",
       company: "Tesla",
       duration: "Sept 2024 - Nov 2024",
       description:
         "Worked on the data platform that's a part of Tesla's backend application ecosystem.",
     },
     {
-      title: "Data Engineer Intern",
+      title: "Data Engineer Intern, Data Science",
       company: "Castleton Commodities International",
       duration: "Jun 2024 - Aug 2024",
       description:
         "Created infrastructure for automatic ML model (XGBoost) generation based on dataset-related parameters.",
     },
     {
-      title: "Software Engineer Intern",
+      title: "Software Engineer Intern, Data Platform",
       company: "Epic Games",
       duration: "Jan 2024 - Apr 2024",
       description:
