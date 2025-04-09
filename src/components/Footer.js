@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer" id="footer">
       <div className="footer-contact">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/jayfeng20"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -16,14 +16,14 @@ const Footer = () => {
           <FaGithub size={24} color="#181717" />
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://linkedin.com/in/jayfeng20"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
           <FaLinkedin size={24} color="#0077B5" />
         </a>
-        <a href="mailto:youremail@example.com" aria-label="Email">
+        <a href="mailto:jonathanfeng2001@gmail.com" aria-label="Email">
           <MdEmail size={24} color="#808080" />
         </a>
       </div>
