@@ -1,85 +1,138 @@
-/* Overall Experience Section */
+:root {
+  --bg-color: #ffffff;
+  --card-bg: #fafafa;
+  --text-color: #333333;
+  --secondary-text: #777777;
+  --accent-color: #0070f3;
+  --card-shadow: rgba(0, 0, 0, 0.08);
+}
+
 .experience {
-  padding: 60px 20px;
-  background-color: #ffffff;
-  color: #333;
+  padding: 80px 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   text-align: center;
 }
 
 .experience h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #222;
+  font-size: 2.75rem;
+  margin-bottom: 60px;
+  position: relative;
 }
 
-/* Experience list: one card per row, centered horizontally */
+.experience h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color);
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
 .experience-list {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Each experience card styling as a flex container */
 .experience-item {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Ensures content starts at the top of the card */
-  align-items: center; /* Centers content horizontally */
-  width: 100%;
-  max-width: 600px; /* Limit width for readability */
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  align-items: center;
   text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 24px;
 }
 
 .experience-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px var(--card-shadow);
 }
 
-/* Job Title Styling – ensure no extra top margin */
+.experience-company {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.experience-company a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.3s ease;
+}
+.experience-company a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.experience-company a:hover {
+  color: var(--accent-color);
+}
+.experience-company a:hover::after {
+  transform: scaleX(1);
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: var(--secondary-text);
+  margin-bottom: 0;
+  padding-top: 100;
+}
+
+.experience-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  width: 100%;
+}
+
+.experience-item:hover .experience-details {
+  max-height: 400px;
+  opacity: 1;
+  margin-top: 16px;
+}
+
 .experience-title {
-  margin: 0; /* Remove default top margin */
+  margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
-  color: #222;
+  color: var(--text-color);
   margin-bottom: 4px;
 }
 
-/* Team Styling – distinguishes the team from the title */
 .experience-team {
   display: block;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  color: #555;
-  margin-bottom: 8px;
-}
-
-/* Company Styling */
-.experience-company {
-  display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
-  color: #333;
+  color: var(--text-color);
   font-weight: 500;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
-/* Duration Styling */
-.duration {
-  display: block;
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 10px;
-}
-
-/* Description Styling */
 .experience-description {
   font-size: 1rem;
-  color: #555;
+  color: var(--secondary-text);
+  line-height: 1.6;
   margin: 0;
 }

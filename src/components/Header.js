@@ -20,6 +20,9 @@ function Header() {
             <li>
               <a href="#experience">EXPERIENCE</a>
             </li>
+            <li>
+              <a href="#footer">CONTACT</a>
+            </li>
           </ul>
         </nav>
       </div>

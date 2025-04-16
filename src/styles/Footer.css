@@ -3,7 +3,6 @@
   width: 100%;
   background: #fff;
   border-top: 1px solid #e0e0e0;
-  /* no position hack needed unless you want it fixed */
 }
 
 /* 2) centered, constrained content */

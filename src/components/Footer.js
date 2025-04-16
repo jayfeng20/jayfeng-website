@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 import "../styles/Footer.css";
 
 const Footer = () => (
-  <footer className="footer">
+  <footer className="footer" id="footer">
     <div className="footer-inner">
       <div className="footer-contact">
         <a
