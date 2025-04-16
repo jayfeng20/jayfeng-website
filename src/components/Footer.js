@@ -3,9 +3,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import "../styles/Footer.css";
 
-const Footer = () => {
-  return (
-    <footer className="footer" id="footer">
+const Footer = () => (
+  <footer className="footer">
+    <div className="footer-inner">
       <div className="footer-contact">
         <a
           href="https://github.com/jayfeng20"
@@ -30,8 +30,8 @@ const Footer = () => {
       <p className="footer-text">
         &copy; {new Date().getFullYear()} Jonathan Feng. All rights reserved.
       </p>
-    </footer>
-  );
-};
+    </div>
+  </footer>
+);
 
 export default Footer;

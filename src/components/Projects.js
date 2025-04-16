@@ -13,7 +13,7 @@ const Projects = () => {
       title: "Have You Eaten?",
       description:
         "Social platform for storing ingredients, sharing recipes, and sending anyone a culinary challenge.",
-      link: "#",
+      link: "https://www.notion.so/Project-HYE-Have-You-Eaten-ReadME-1d3a0cf3ac30807985d6ccdd17ee9fb7?pvs=4",
     },
   ];
 

@@ -1,55 +1,52 @@
-/* Overall header container styling */
+/* 1) the sticky, edge‑to‑edge header */
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* 2) inner container caps width and handles your flex layout */
+.header-inner {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 20px 30px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  background: transparent;
 }
 
-/* LOGO CONTAINER: holds the bolded J */
+/* 3) your existing styles */
 .logo-container {
   display: flex;
   align-items: center;
 }
 
-/* Logo Icon: Bolded "J" inside a box */
 .logo-icon {
   font-family: "Georgia", serif;
   font-weight: bold;
   font-size: 2.25rem;
   color: #222;
-
+  width: 45px;
+  height: 45px;
+  border: 2px solid #222;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 45px; /* Box width */
-  height: 45px; /* Box height */
-  border: 2px solid #222; /* Border to create a box effect */
-  border-radius: 4px;
-
   margin-right: 10px;
 }
 
-/* .logo-text {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-  color: #222;
-  text-transform: uppercase; 
-} */
-
-/* NAVIGATION STYLES */
+/* navigation */
 .navigation ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content: space-evenly; /* Equally spaces the items */
 }
 
 .navigation ul li {
@@ -66,11 +63,10 @@
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   transition: color 0.3s ease;
-  position: relative;
   padding-bottom: 5px;
+  position: relative;
 }
 
-/* Underline animation with pseudo-element */
 .navigation ul li a::after {
   content: "";
   position: absolute;
