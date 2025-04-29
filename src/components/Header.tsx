@@ -24,7 +24,7 @@ function Header() {
               <a href="#experience">EXPERIENCE</a>
             </li>
             <li>
-              <a href="#contact">CONTACT</a>
+              <a href="#footer">CONTACT</a>
             </li>
           </ul>
         </nav>

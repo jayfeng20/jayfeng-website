@@ -3,13 +3,15 @@
   width: 100%;
   background: #fff;
   border-top: 2px solid #e0e0e0;
+  max-height: 108px;
 }
 
 /* 2) centered, constrained content */
 .footer-inner {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  margin-top: 32px;
+  margin-bottom: 0;
+  /* padding: 20px; */
 
   display: flex;
   flex-direction: column;
