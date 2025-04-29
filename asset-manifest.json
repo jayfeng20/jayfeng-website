@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/jayfeng-website/static/css/main.d67e204e.css",
-    "main.js": "/jayfeng-website/static/js/main.329c712a.js",
+    "main.css": "/jayfeng-website/static/css/main.ec608b84.css",
+    "main.js": "/jayfeng-website/static/js/main.d6d81e09.js",
     "static/js/453.20cbf836.chunk.js": "/jayfeng-website/static/js/453.20cbf836.chunk.js",
     "static/media/profile.png": "/jayfeng-website/static/media/profile.6dc454bd228e99c07f09.png",
     "index.html": "/jayfeng-website/index.html",
-    "main.d67e204e.css.map": "/jayfeng-website/static/css/main.d67e204e.css.map",
-    "main.329c712a.js.map": "/jayfeng-website/static/js/main.329c712a.js.map",
+    "main.ec608b84.css.map": "/jayfeng-website/static/css/main.ec608b84.css.map",
+    "main.d6d81e09.js.map": "/jayfeng-website/static/js/main.d6d81e09.js.map",
     "453.20cbf836.chunk.js.map": "/jayfeng-website/static/js/453.20cbf836.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d67e204e.css",
-    "static/js/main.329c712a.js"
+    "static/css/main.ec608b84.css",
+    "static/js/main.d6d81e09.js"
   ]
 }
