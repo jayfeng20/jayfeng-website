@@ -1,0 +1,104 @@
+/* inherit your color variables from :root */
+.skills {
+  background: transparent;
+  color: var(--text-color);
+  text-align: center;
+  scroll-margin-top: var(--header-h, 0px);
+  min-height: calc(100vh - var(--header-h, 0px));
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.skills h2 {
+  font-size: 2.75rem;
+  margin-bottom: 60px;
+  position: relative;
+}
+.skills h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent-color);
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+/* one full-width card per category */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* card shell (mirrors .experience-item) */
+.skills-item {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 24px 32px;
+}
+.skills-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px var(--card-shadow);
+}
+
+/* static header row */
+.skills-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+.skills-icon svg {
+  font-size: 1.6rem;
+  color: var(--accent-color);
+}
+
+/* hidden details row */
+.skills-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.skills-item:hover .skills-details {
+  max-height: 400px;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+/* pill buttons for each skill */
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background: var(--bg-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 999px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.skill-pill:hover {
+  background: var(--accent-color);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+.pill-icon svg {
+  font-size: 1rem;
+}

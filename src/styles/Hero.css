@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px; /* Equal spacing between columns */
-  padding: 80px 20px;
-  background-color: #fff; /* Minimal, clean background */
+  padding-inline: 20px;
+  background-color: var(--primary-bg-color);
   color: #333;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -84,4 +84,49 @@
   .hero-image {
     max-width: 200px;
   }
+}
+
+.typing {
+  font-family: monospace;
+  color: #0000; /* keep text transparent      */
+
+  background: linear-gradient(-90deg, #333 5px, #0000 0) 15px 0,
+    linear-gradient(#333 0 0) 0 0;
+
+  background-size: calc(var(--n) * 1ch) 200%;
+  background-repeat: no-repeat;
+  background-clip: padding-box, text;
+  -webkit-background-clip: padding-box, text;
+  background-color: transparent;
+
+  /* faster: 0.15 s per character, blink every 0.5 s */
+  animation: blink 0.5s steps(1) infinite,
+    type calc(var(--n) * 0.15s) steps(var(--n)) forwards;
+}
+
+@keyframes type {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes blink {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+
+.hero-contact {
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-evenly; /* even horizontal spacing      */
+  gap: 20px; /* ensures equal gaps if width
+                                    gets tight on small screens  */
+}
+
+.hero-contact a {
+  transition: transform 0.2s ease;
+}
+
+.hero-contact a:hover {
+  transform: translateY(-3px); /* subtle lift on hover         */
 }

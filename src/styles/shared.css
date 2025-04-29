@@ -1,0 +1,11 @@
+/* Every section gets at least one full viewport height */
+.fill-screen {
+  min-height: 100vh; /* 100 % of the viewport height  */
+  display: flex; /* optional: centers content     */
+  flex-direction: column; /* keep normal vertical flow     */
+  justify-content: center; /* center vertically             */
+
+  /* leave room for a fixed header (e.g., 64 px) if you have one */
+  scroll-margin-top: 64px; /* ensures smooth-scroll stops below header */
+  padding-top: 64px;
+}

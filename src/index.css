@@ -1,5 +1,6 @@
 :root {
-  --primary-bg-color: #f9f9f9; /* Replace with the header background color */
+  --primary-bg-color: #fff; /* Replace with the header background color */
+  --header-h: 144px;
 }
 
 body {
@@ -15,3 +16,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---- fixed line-art background for the entire site ---- */
+/* body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("/src/assets/images/line-art-vector/cat.jpg") bottom center
+    no-repeat fixed;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
+} */
+
+/* background color for the entire site
+body {
+  background-color: var(--primary-bg-color);
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+} */

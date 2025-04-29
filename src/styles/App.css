@@ -39,3 +39,20 @@
     transform: rotate(360deg);
   }
 }
+
+#projects,
+#experience {
+  min-height: 100vh;
+}
+
+#hero {
+  /* take full viewport minus header */
+  min-height: calc(100vh - var(--header-h));
+
+  display: flex;
+  align-items: center; /* vertical centring in the visible space */
+  justify-content: center; /* horizontal centring (optional) */
+
+  /* let smooth-scroll stop just below the sticky header */
+  scroll-margin-top: var(--header-h);
+}
