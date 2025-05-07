@@ -3,6 +3,7 @@ import "../styles/Hero.css";
 import profileImage from "../assets/images/profile.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import obsidianAnimation from "../assets/videos/obsidian-graph-animation.mp4";
 
 const Hero = () => {
   return (
@@ -51,6 +52,13 @@ const Hero = () => {
             <MdEmail size={32} color="#808080" />
           </a>
         </div>
+      </div>
+
+      <div className="p-4">
+        <video autoPlay muted loop playsInline className="w-full h-auto">
+          <source src={obsidianAnimation} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </section>
   );
